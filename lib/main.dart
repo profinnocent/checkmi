@@ -1,14 +1,15 @@
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-const priClr = Color.fromRGBO(255,235,59,1.0);
-const secClr = Color.fromRGBO(255,255,114,1.0);
-const acentClr = Color.fromRGBO(255,235,59,1.0);
-const offwyt = Color.fromRGBO(255,235,59,1.0);
-
+const priClr = Color.fromRGBO(255, 235, 59, 1.0);
+const secClr = Color.fromRGBO(255, 255, 114, 1.0);
+const acentClr = Color.fromRGBO(255, 193, 7, 1.0);
+const offwyt = Color.fromRGBO(255, 255, 200, 1.0);
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -49,16 +50,15 @@ class MyApp extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
-              Card(
+              const Card(
                 color: secClr,
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 20.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
                     color: Colors.black,
                   ),
-                  title: const Text(
+                  title: Text(
                     '+234 80 606 919 27',
                     style: TextStyle(
                         fontSize: 16.0,
@@ -68,16 +68,15 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              Card(
+              const Card(
                 color: secClr,
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 20.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
                     color: Colors.black,
                   ),
-                  title: const Text(
+                  title: Text(
                     'innocent.unachukwu@gmail.com',
                     style: TextStyle(
                         fontSize: 16.0,
@@ -87,16 +86,15 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              Card(
+              const Card(
                 color: secClr,
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 20.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.home,
                     color: Colors.black,
                   ),
-                  title: const Text(
+                  title: Text(
                     'http://github.com/profinnocent',
                     style: TextStyle(
                         fontSize: 16.0,
@@ -116,8 +114,7 @@ class MyApp extends StatelessWidget {
                   children: const <Widget>[
                     CircleAvatar(
                       radius: 20.0,
-                      backgroundImage: AssetImage(
-                          'images/instagram.png'),
+                      backgroundImage: AssetImage('images/instagram.png'),
                     ),
                     CircleAvatar(
                       radius: 20.0,
@@ -134,12 +131,12 @@ class MyApp extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton.extended(
-            backgroundColor: Colors.amber,
-            foregroundColor: Colors.black,
-            icon: Icon(Icons.send),
-            label: Text('checkmi'),
-            onPressed: (){
-          //  Action
+          backgroundColor: Colors.amber,
+          foregroundColor: Colors.black,
+          icon: const Icon(Icons.send),
+          label: const Text('checkmi'),
+          onPressed: () {
+            //  Action
           },
         ),
       ),
